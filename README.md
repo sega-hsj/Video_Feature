@@ -64,9 +64,11 @@ pip install -v -e .  # 需在cuda环境下Install
 ```sh
 python extract.py --csv=./input.csv --type=obj --batch_size=1 --num_decoding_thread=1 --obj_number 5 --rcnn_model_path MODEL_PATH
 特征维度: second * (1 + 5 + 256)
-label = 1
-boxes = 4 (coordinates) + 1 (confident)
-feats = 256
+  label = 1
+  boxes = 4 (coordinates) + 1 (confident)
+  feats = 256
+预训练模型：
+  https://drive.google.com/file/d/1yssanW8ny-nXDUijXaYXWrV6FxVSvZ9K/view?usp=sharing
 ```
 
 ## Acknowledgements
