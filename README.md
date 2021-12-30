@@ -54,16 +54,20 @@ python convert_video_feature_to_pickle.py --feature_root_path [FEATURE_PATH] --p
 *The key is set as the video name in the pickle file*
 
 # 安装Faster R-CNN
+```sh
 cd videocnn/TSD
 pip install -r requirements/build.txt
 pip install -v -e .  # 需在cuda环境下Install
+```
 
 # 抽取object 特征
-python extract.py --csv=./input.csv --type=obj --batch_size=1 --num_decoding_thread=1
+```sh
+python extract.py --csv=./input.csv --type=obj --batch_size=1 --num_decoding_thread=1 --obj_number 5 --rcnn_model_path MODEL_PATH
 特征维度: second * (1 + 5 + 256)
 label = 1
 boxes = 4 (coordinates) + 1 (confident)
 feats = 256
+```
 
 ## Acknowledgements
 The code re-used code from https://github.com/kenshohara/3D-ResNets-PyTorch
