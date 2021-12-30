@@ -1,0 +1,3 @@
+video_path,feature_path
+/mnt/proj56/sjhuang/PMM-Project/datasets/HowTo100M_sample_1%/Cars & Other Vehicles/Nhw3zMK3jyw.mp4,./out_feats/Nhw3zMK3jyw.npy
+/mnt/proj56/sjhuang/PMM-Project/datasets/HowTo100M_sample_1%/Cars & Other Vehicles/RKH1K_EFBRQ.mp4,./out_feats/RKH1K_EFBRQ.npy
